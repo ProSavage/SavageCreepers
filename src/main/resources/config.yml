@@ -25,7 +25,7 @@ Creepers:
     Info:
       # You want to keep this number higher than 7 or
       # the resulting explosion is not much larger than normal.
-      Explosion-Power: 7
+      Explosion-Power: 9
       Ignite-Blocks: true
       Break-Blocks: true
     Nametag:
@@ -78,7 +78,7 @@ Creepers:
         - ''
         - '&7&o(( Place to Use ))'
     Info:
-      Explosion-Power: 17
+      Explosion-Power: 5
       Ignite-Blocks: false
       Break-Blocks: true
     Nametag:
