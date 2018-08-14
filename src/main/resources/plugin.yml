@@ -1,0 +1,8 @@
+name: SavageCreepersX
+main: net.prosavage.savagecreepers.Enable
+version: 1.0
+description: A plugin that enhances creepers
+authors: [ProSavage, ]
+commands:
+  creeperegg:
+    description: Give creeper eggs
