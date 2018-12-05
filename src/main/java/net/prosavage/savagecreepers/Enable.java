@@ -33,9 +33,10 @@ public class Enable extends JavaPlugin {
 
     public static List<String> creeperTypes = Arrays.asList("dynamite, rocket,sandstorm,sticky");
     public static boolean mc18 = false;
+    public static Enable instance;
 
     public static Enable pl() {
-        return (Enable) Bukkit.getServer().getPluginManager().getPlugin("SavageCreepersX");
+        return instance;
     }
 
     @Override
@@ -79,6 +80,7 @@ public class Enable extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new StickyCreeperSpawn(), this);
         getServer().getPluginManager().registerEvents(new StickyCreeperSuffocate(), this);
 
+        instance = this;
         getLogger().info("All Done - Enjoy!");
 
     }
