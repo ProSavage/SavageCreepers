@@ -90,20 +90,18 @@ public class Enable extends JavaPlugin {
 
     private boolean checkIfConfigExists() {
         File configFile = new File(getDataFolder(), "config.yml");
-
         return configFile.exists();
-
     }
 
     public void applyNametag(Entity entity, String nametag, boolean visible) {
         nametag = color(nametag);
         if (mc18 && visible) {
             ArmorStand as = (ArmorStand) entity.getLocation().getWorld().spawnEntity(entity.getLocation(), EntityType.ARMOR_STAND); //Spawn the ArmorStand
-            as.setVisible(false); //Makes the ArmorStand invisible
-            as.setGravity(false); //Make sure it doesn't fall
-            as.setCanPickupItems(false); //I'm not sure what happens if you leave this as it is, but you might as well disable it
-            as.setCustomName(nametag); //Set this to the text you want
-            as.setCustomNameVisible(true); //This makes the text appear no matter if your looking at the entity or not
+            as.setVisible(false); // Makes the ArmorStand invisible
+            as.setGravity(false); // Make sure it doesn't fall
+            as.setCanPickupItems(false); // Disable Items
+            as.setCustomName(nametag); // Set this to the text you want
+            as.setCustomNameVisible(true); // This makes the text appear no matter if your looking at the entity or not
             entity.setPassenger(as);
             entity.setCustomName(nametag);
             entity.setCustomNameVisible(false);

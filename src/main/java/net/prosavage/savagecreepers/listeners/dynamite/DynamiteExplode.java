@@ -28,7 +28,7 @@ public class DynamiteExplode implements Listener {
                     configuration.getBoolean("Info.Ignite-Blocks")
                     , configuration.getBoolean("Info.Break-Blocks"));
 
-            //Bukkit.broadcastMessage(Float.parseFloat(configuration.get("Info.Explosion-Power") + "") + "  " + configuration.getBoolean("Info.Ignite-Blocks") + "  " + configuration.getBoolean("Info.Break-Blocks"));
+            // Bukkit.broadcastMessage(Float.parseFloat(configuration.get("Info.Explosion-Power") + "") + "  " + configuration.getBoolean("Info.Ignite-Blocks") + "  " + configuration.getBoolean("Info.Break-Blocks"));
         }
 
     }
